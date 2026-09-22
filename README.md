@@ -1,4 +1,4 @@
-# Jubair bro Ultra pro auto script vpn 
+# Arman Ultra Pro Auto Script VPN 
 
 # Directly install without the need to register an IP VPS 
 
@@ -26,7 +26,7 @@
 - (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
 <br>
 
-# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/jubairbro/AUTO-SCRIPT/tree/master/image) to display other settings
+# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/Armanmiah2026/AUTO-SCRIPT/tree/master/image) to display other settings
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
@@ -37,7 +37,7 @@
 <br>
 
 # Pointing
-![Pointing](https://github.com/jubairbro/AUTO-SCRIPT/blob/master/image/pointing.png)
+![Pointing](https://github.com/Armanmiah2026/AUTO-SCRIPT/blob/master/image/pointing.png)
 
 ## Service & Port:
 <br>
@@ -74,37 +74,15 @@
 - no auto backup? which... is permanently removed
 - Just accept the existing features / you can add them yourself manually
 - Additional Features (Optional) skipper (NOTE) install after [Step Install] is complete
-- Optional [install OpenVPN + Slowdns +](https://github.com/jubairbro/AUTO-SCRIPT/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
-- Optional [install Panel Webmin + ADS Block](https://github.com/jubairbro/AUTO-SCRIPT/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
-- Optional [install Bot Telegram Xolpanel](https://github.com/jubairbro/AUTO-SCRIPT/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
+- Optional [install OpenVPN + Slowdns +](https://github.com/Armanmiah2026/AUTO-SCRIPT/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
+- Optional [install Panel Webmin + ADS Block](https://github.com/Armanmiah2026/AUTO-SCRIPT/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- Optional [install Bot Telegram Xolpanel](https://github.com/Armanmiah2026/AUTO-SCRIPT/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
   
 # Menu
-![Service Status](https://github.com/jubairbro/AUTO-SCRIPT/blob/master/image/menu1.png)
+![Service Status](https://github.com/Armanmiah2026/AUTO-SCRIPT/blob/master/image/menu1.png)
 
 # Service Status
-![Service Status](https://github.com/jubairbro/AUTO-SCRIPT/blob/master/image/service1.png)
+![Service Status](https://github.com/Armanmiah2026/AUTO-SCRIPT/blob/master/image/service1.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
-```
-apt update && apt upgrade -y && reboot
-```
-- Step 2 for (ubuntu) directly install
-```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/setup1.sh && chmod +x setup1.sh && sed -i -e 's/\r$//' setup1.sh && screen -S setup ./setup1.sh
-```
-
-# Telegram
-[![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/jubairFF/)
-[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/+1p9RnexGMP0yOGVl/)
-
-# ATTENTION (MUST READ) CAREFULLY
-- PROHIBITED FOR SALE BECAUSE I GET FREE FROM THE INTERNET
-- DATA SECURITY / YOUR USE HISTORY ON THE INTERNET IS NOT MY RESPONSIBILITY AS A SCRIPT PROVIDER
-- ALL YOUR DATA / USAGE HISTORY ON THE INTERNET ONLY VPS NETWORK PROVIDERS MANAGE IT AND (FBI) maybe
-- USE IT WISELY THEN YOU WILL AVOID PROBLEMS
-- WATCHING ADULT FILM IS YOUR OWN RESPONSIBILITY
-
-# FINAL MESSAGE
-- THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
-- BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
