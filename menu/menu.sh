@@ -74,8 +74,8 @@ show_menu() {
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: JUBAIR BRO"
-    echo -e "\e[1;32m Telegram    \e[0m: https://t.me/JubairFF"
+    echo -e "\e[1;32m SCRIPT BY   \e[0m: Arman"
+    echo -e "\e[1;32m Telegram    \e[0m: https://t.me/Armanmiah2026"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     read -p " Select menu :  " opt
@@ -98,7 +98,7 @@ show_menu() {
 # Initial setup
 domain=$(cat /etc/xray/domain)
 Exp2="LIFETIME"
-Name="JUBAIR BRO"
+Name="Arman"
 
 # Main loop to display menu continuously
 while true; do
