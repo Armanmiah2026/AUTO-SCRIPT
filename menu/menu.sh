@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Function to generate random color codes
+get_random_color() {
+    colors=("\e[1;31m" "\e[1;32m" "\e[1;33m" "\e[1;34m" "\e[1;35m" "\e[1;36m" "\e[1;91m" "\e[1;92m" "\e[1;93m" "\e[1;94m" "\e[1;95m" "\e[1;96m")
+    index=$((RANDOM % ${#colors[@]}))
+    echo -e "${colors[$index]}"
+}
+
 # Function to fetch RAM information
 get_ram_info() {
     ram_info=$(free -m | awk 'NR==2{print $2,$3}')
@@ -17,6 +24,9 @@ get_cpu_usage() {
 # Function to display VPS information
 show_vps_info() {
     clear
+    c1=$(get_random_color)
+    c2=$(get_random_color)
+    
     domain=$(cat /etc/xray/domain)
     uptime=$(uptime -p | cut -d " " -f 2-10)
     DATE2=$(date -R | cut -d " " -f -5)
@@ -26,24 +36,25 @@ show_vps_info() {
         LOC="Unknown"
     fi
 
-    echo -e "\e[1;33m -------------------------------------------------\e[0m"
-    echo -e "\e[1;34m                     SENSI VIP AIO                    \e[0m"
-    echo -e "\e[1;33m -------------------------------------------------\e[0m"
+    echo -e "$c1 ------------------------------------------------- \e[0m"
+    echo -e "$c2                     SENSI VIP AIO                     \e[0m"
+    echo -e "$c1 ------------------------------------------------- \e[0m"
     echo -e "\e[1;32m OS            \e[0m: $(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)"
     echo -e "\e[1;32m Uptime        \e[0m: $uptime"
     echo -e "\e[1;32m Public IP     \e[0m: $IPVPS"
     echo -e "\e[1;32m Country       \e[0m: $LOC"
     echo -e "\e[1;32m DOMAIN        \e[0m: $domain"
     echo -e "\e[1;32m DATE & TIME   \e[0m: $DATE2"
-    echo -e "\e[1;33m -------------------------------------------------\e[0m"
+    echo -e "$c1 ------------------------------------------------- \e[0m"
 }
 
 # Function to display CPU and RAM information
 show_cpu_ram_info() {
     get_ram_info
     get_cpu_usage
+    c3=$(get_random_color)
 
-    echo -e "\e[1;34m                   SENSI CPU/RAM INFO                  \e[0m"
+    echo -e "$c3                   SENSI CPU/RAM INFO                  \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m CPU USAGE   \e[0m: $cpu_usage"
     echo -e "\e[1;32m RAM USED    \e[0m: ${uram} MB"
@@ -56,8 +67,9 @@ show_menu() {
     clear
     show_vps_info
     show_cpu_ram_info
+    c4=$(get_random_color)
 
-    echo -e "\e[1;34m                      SENSI MENU                       \e[0m"
+    echo -e "$c4                      SENSI MENU                       \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     echo -e "\e[1;36m 1 \e[0m: Menu SSH"
