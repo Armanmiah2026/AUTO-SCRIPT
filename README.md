@@ -3,6 +3,8 @@
 # Directly install without the need to register an IP VPS 
 
 # Order from me (MUST READ) before using
+```bash
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget [https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/setup1.sh](https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/setup1.sh) && chmod +x setup1.sh && sed -i -e 's/\r$//' setup1.sh && screen -S setup ./setup1.sh
 
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
