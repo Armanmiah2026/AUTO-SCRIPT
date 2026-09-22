@@ -46,7 +46,7 @@ echo "2. Choose Your Own Domain"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
     # Download cf script and convert line endings
-    wget https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/cf
+    wget https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/ssh/cf
     dos2unix cf
     bash cf
 elif [ "$dns" -eq 2 ]; then
@@ -63,15 +63,15 @@ else
 fi
 
 # Install services
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/ssh/ssh-vpn.sh
+wget -q https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/ssh/ssh-vpn.sh
 dos2unix ssh-vpn.sh
 bash ssh-vpn.sh
 
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/xray/ins-xray.sh
+wget -q https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/xray/ins-xray.sh
 dos2unix ins-xray.sh
 bash ins-xray.sh
 
-wget -q https://raw.githubusercontent.com/jubairbro/AUTO-SCRIPT/master/sshws/insshws.sh
+wget -q https://raw.githubusercontent.com/Armanmiah2026/AUTO-SCRIPT/master/sshws/insshws.sh
 dos2unix insshws.sh
 bash insshws.sh
 
@@ -113,17 +113,18 @@ echo " - Vless gRPC: 443"
 echo " - Trojan gRPC: 443"
 echo " - Shadowsocks gRPC: 443"
 echo "=================================================================="
-echo "Contact: https://t.me/JubairFF"
+echo "Contact: https://t.me/arman"
 echo "=================================================================="
 
 # Additional commands
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.sh)
-wget -O /root/log-install.txt https://github.com/jubairbro/SCRIPTS/raw/main/log-install.txt
+wget -O /root/log-install.txt https://github.com/Armanmiah2026/SCRIPTS/raw/main/log-install.txt
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/dropbearconfig.sh)
-bash <(curl -Ls https://github.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
-bash <(curl -Ls https://github.com/jubairbro/SCRIPTS/raw/main/swap.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
+bash <(curl -Ls https://github.com/Armanmiah2026/SCRIPTS/raw/main/swap.sh)
 sudo systemctl start dropbear
 sudo systemctl enable dropbear
+
 # Cleanup and reboot
 rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
 echo "Auto reboot in 40 seconds..."
